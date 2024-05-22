@@ -3,7 +3,7 @@ package test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 
-public class Scroll_up_down {
+public class ScrollPageUpDown {
 	WebDriver driver;
 	public void driverSetting() {
 		driver = new ChromeDriver();
@@ -20,9 +20,9 @@ public class Scroll_up_down {
 		js.executeScript("window.scrollBy(0,-400)", "");
 	}
 	public static void main(String[] args) throws Exception{
-		Scroll_up_down s=new Scroll_up_down();
-		s.driverSetting();
-		s.scrollDown();
-		s.scrollUp();
+		ScrollPageUpDown spug = new ScrollPageUpDown();
+		spug.driverSetting();
+		spug.scrollDown();
+		spug.scrollUp();
 	}
 }
